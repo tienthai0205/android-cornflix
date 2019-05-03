@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CORNFLIX</string>
+    <string-array name="gernes">
+        <item>Genres</item>
+        <item>Comedy</item>
+        <item>Action</item>
+        <item>Romance</item>
+        <item>Thriller</item>
+        <item>International</item>
+    </string-array>
+
+    <string-array name="menu">
+        <item>Remove from Favourite</item>
+        <item>Show movie</item>
+    </string-array>
+    <string name="add_movie">New Movie</string>
+    <string name="add_drama">New Drama</string>
+    <string name="my_library">My Library</string>
+    <string name="my_favourite">Favourite</string>
+    <string name="ep_in_drama">Episodes in</string>
+    <string name="add_ep">ADD</string>
+    <string name="title_movie">Title</string>
+    <string name="genre_movie">Genre</string>
+    <string name="release_year">Release Year</string>
+    <string name="director">Directed by</string>
+    <string name="starring">Starring</string>
+    <string name="duration_film">Duration</string>
+    <string name="nomination">Nomination</string>
+    <string name="description_drama">Description</string>
+    <string name="country_drama">Country</string>
+    <string name="show_ep">Episodes</string>
+
+
+</resources>

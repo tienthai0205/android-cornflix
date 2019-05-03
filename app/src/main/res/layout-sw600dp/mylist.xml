@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="337dp"
+        android:layout_height="229dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/rubysparks" />
+
+    <LinearLayout
+        android:layout_width="914dp"
+        android:layout_height="225dp"
+        android:weightSum="3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/movieImage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:fontFamily="serif-monospace"
+            android:text="Title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="28sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/genreView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="casual"
+            android:textSize="28sp"
+
+            android:text="Genre"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/typeView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="Type"
+            android:textSize="28sp"
+            android:textColor="@android:color/background_light" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

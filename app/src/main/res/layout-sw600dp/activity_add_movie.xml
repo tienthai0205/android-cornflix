@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity.AddFilmActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/addImage"
+                android:layout_width="match_parent"
+                android:layout_height="401dp"
+                android:onClick="onAddImageClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/noun" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="752dp"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/add_film_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="149dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.706">
+
+                    <EditText
+                        android:id="@+id/movieNameView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="32sp"
+                        android:hint="Title"
+                        android:inputType="textMultiLine"
+                        tools:layout_editor_absoluteX="152dp"
+                        tools:layout_editor_absoluteY="83dp" />
+
+                    <Spinner
+                        android:id="@+id/addGenre"
+                        android:layout_width="163dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/releaseDateView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="32sp"
+                        android:hint="release year"
+                        android:inputType="date" />
+
+                    <EditText
+                        android:id="@+id/directorNameView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="directed by"
+                        android:textSize="32sp"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/staringNameView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="32sp"
+                        android:hint="starring"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="10dp" />
+
+                    <EditText
+                        android:id="@+id/durationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="32sp"
+                        android:hint="Description"
+                        android:inputType="textMultiLine" />
+
+                    <CheckBox
+                        android:id="@+id/nominationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="32sp"
+                        android:text="Nominated" />
+
+                    <com.example.moviemanagement2.CustomDrawing.CustomFav
+                        android:id="@+id/addToFav"
+                        android:layout_width="144dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/cancel_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="onCancelClick"
+                        android:text="Cancel"
+                        android:textSize="28sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <Button
+                        android:id="@+id/add_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="28sp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:onClick="onAddNewMovieClick"
+                        android:text="ADD" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

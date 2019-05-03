@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moviemanagement2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShowActivity.ShowDramaActivity"
+            android:parentActivityName=".MainMenu.LibraryMovieActivity"/>
+        <activity android:name=".MainMenu.FavoriteActivity"
+            android:parentActivityName=".MainMenu.MainActivity"/>
+        <activity android:name=".EditActivity.EditFilmActivity" />
+        <activity android:name=".MainMenu.LibraryEpisodeActivity" />
+        <activity android:name=".AddActivity.AddEpActivity" />
+        <activity android:name=".AddActivity.AddDramaActivity" />
+        <activity android:name=".EditActivity.EditEpisodeActivity" />
+        <activity android:name=".EditActivity.EditDramaActivity" />
+        <activity android:name=".ShowActivity.ShowFilmActivity"
+            android:parentActivityName=".MainMenu.LibraryMovieActivity"/>
+        <activity android:name=".AddActivity.AddFilmActivity" />
+        <activity android:name=".MainMenu.LibraryMovieActivity"
+            android:parentActivityName=".MainMenu.MainActivity"/>
+        <activity android:name=".MainMenu.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

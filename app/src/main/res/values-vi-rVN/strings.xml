@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CORNFLIX</string>
+    <string name="add_movie">Phim mới</string>
+    <string name="add_drama">Phim bộ mới</string>
+    <string name="my_library">Thư viện</string>
+    <string name="my_favourite">Yêu thích</string>
+    <string name="ep_in_drama">Danh sách tập trong</string>
+    <string name="add_ep">THÊM TẬP MỚI</string>
+    <string name="title_movie">Tên phim</string>
+    <string name="genre_movie">Thể loại</string>
+    <string name="release_year">Năm sản xuất</string>
+    <string name="director">Đạo diễn</string>
+    <string name="starring">Diễn viên</string>
+    <string name="duration_film">Thời lượng</string>
+    <string name="nomination">Đề cử</string>
+    <string name="description_drama">Tóm tắt nội dung</string>
+    <string name="country_drama">Quốc gia sản xuất</string>
+    <string name="show_ep">Tập phim</string>
+</resources>

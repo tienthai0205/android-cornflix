@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="68dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="13dp"
+        android:layout_toEndOf="@+id/movieImage"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="Title"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:textColor="@android:color/background_light"/>
+
+        <TextView
+            android:id="@+id/genreView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Genre"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light"/>
+
+        <TextView
+            android:id="@+id/typeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_light"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
